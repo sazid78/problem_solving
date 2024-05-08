@@ -1,0 +1,13 @@
+weight = int(input("Enter your wright : "))
+height = float(input("Enter your height : "))
+BMI = 0
+BMI = weight/(height*height)
+
+if BMI<18.5:
+  print("Under weight")
+elif 18.5<= BMI <= 25:
+  print("Normal weight")
+elif 25 < BMI <= 30:
+  print("Over weight")
+else:
+  print("Obese")

@@ -1,0 +1,9 @@
+a = int(input("How old are you? "))
+
+live = 90 - a
+
+days =  365 * live
+weeks = 52 * live
+months = 12 * live
+
+print(f"You alive probabily {days} days, {weeks} weeks, and {months} months ")

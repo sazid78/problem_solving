@@ -1,0 +1,23 @@
+total_bill = float(input("Your total bill is : "))
+tips = int(input("What percentage tip would you like to give ? 10 , 12, 15 ? "))
+
+if tips == 10 :
+  a = 10/100
+  x = total_bill * a
+  actual_total = total_bill + x
+
+elif tips == 12 :
+  a = 12/100
+  x = total_bill * a
+  actual_total = total_bill + x
+
+elif tips == 15 :
+  a = 15/100
+  x = total_bill * a
+  actual_total = total_bill + x
+
+friends = int(input("How many people split the bill ? "))
+
+each_person = round(actual_total/friends,2)
+
+print(f"Each person have to pay {each_person} Doller ")

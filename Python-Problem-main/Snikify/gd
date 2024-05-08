@@ -1,0 +1,28 @@
+def OOP(b, s):
+    lst1 = []
+
+    for i in range(10):
+        if (b[i] <= 20 and s[i] > 30000) or (b[i] > 20 and s[i] > 80000):
+            lst1.append(i)
+
+    return lst1
+
+sazid = {
+    "Name": ['Rahim', 'Karim', 'Munna', 'Faysal', 'Mottaki', 'Amit', 'Dipto', 'Iqbal', 'Jamil', 'Abid'],
+    "Age": [10, 20, 30, 40, 50, 60, 70, 80, 18, 26],
+    "Gender": ["M", "M", "M", "M", "M", "M", "M", "M", "M", "M"],
+    "Salary": [10000, 20000, 30000, 40000, 50000, 20000, 10000, 80000, 90000, 100000]
+}
+
+def display(item1):
+    for i in range(len(item1)):
+        print("#######")
+        print("Name: ", sazid ['Name'][item1[i]])
+        print("Age: ", sazid ['Age'][item1[i]])
+        print("Gender: ", sazid ['Gender'][item1[i]])
+        print("Salary: ", sazid ['Salary'][item1[i]])
+        print("allow : yes")
+
+
+item1 = OOP(sazid["Age"], sazid ["Salary"])
+display(item1)

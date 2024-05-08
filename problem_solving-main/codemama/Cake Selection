@@ -1,0 +1,17 @@
+import 'dart:io';
+
+void main(){
+  var cake_info = stdin.readLineSync()!;
+  var cakes_info = cake_info.split(" ");
+
+  var cake_waight = int.parse(cakes_info[0]);
+  var cake_suger = int.parse(cakes_info[1]);
+  var cake_calories = int.parse(cakes_info[2]);
+
+  if(cake_waight >= 200 && cake_waight <= 300 && cake_suger >= 50 && cake_calories >= 150){
+    print("Yes");
+  }else{
+    print("No");
+  }
+
+}

@@ -1,0 +1,39 @@
+""" class Student: 
+    def __init__(self, name1, id1, name2, id2):
+        self.name1 = name1
+        self.id1 = id1
+        self._name2 = name2  #protected
+        self._id2 = id2      #protected
+
+    def myFunc(self):
+        print('stu_1 details:')
+        print('stu_1 is a student')
+        print(f'Name is: {self.name1}')
+        print(f'ID is: {self.id1}')
+        print('\n')
+        print('stu_2 details:')
+        print('stu_2 is a student')
+        print(f'Name is: {self._name2}')
+        print(f'ID is: {self._id2}')
+
+
+name1 = input("Enter stu_1 name: ")
+id1 = int(input("Enter stu_1 id: "))
+name2 = input("Enter stu_2 name: ")
+id2 = int(input("Enter stu_2 id: "))
+
+ob = Student(name1, id1, name2, id2) 
+ob.myFunc() """
+
+class sazid:
+    def __init__(self,name1,id,name2,id2):
+        self.name1 = name1
+        self.id = id
+        self.__name2 = name2
+        self.__id2 = id2
+
+ob = sazid("sazid",203,"arefin",204) 
+print(ob.name1)
+print(ob.id)
+print(ob.__name2)
+print(ob.__id2)
